@@ -4,7 +4,8 @@
   "description": "A simple path-only router",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec spec",
+    "report-cov": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/omsmith/simple-path-router/issues"
   },
-  "homepage": "https://github.com/omsmith/simple-path-router"
+  "homepage": "https://github.com/omsmith/simple-path-router",
+  "devDependencies": {
+    "mocha": "^1.17.1",
+    "coveralls": "^2.8.0",
+    "istanbul": "^0.2.4",
+    "supertest": "^0.9.0"
+  }
 }
