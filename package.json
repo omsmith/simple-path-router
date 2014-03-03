@@ -1,6 +1,6 @@
 {
   "name": "simple-path-router",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple path-only router",
   "main": "lib/index.js",
   "scripts": {
@@ -12,9 +12,9 @@
     "url": "git@github.com:omsmith/simple-path-router.git"
   },
   "keywords": [
-    "virtualhost",
-    "vhost",
-    "router"
+    "simple",
+    "router",
+    "http"
   ],
   "author": "Owen Smith <owen@omsmith.ca>",
   "license": "MIT",
